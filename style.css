@@ -1,0 +1,380 @@
+/* Reset & Pengaturan Font Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Variabel Warna Resmi Sesuai Brand Kit */
+:root {
+    --jet-black: #0D0D0D;
+    --sport-red: #E53935;
+    --dark-red: #B71C1C;
+    --light-gray: #E5E5E5;
+    --pure-white: #FFFFFF;
+}
+
+body {
+    background-color: var(--pure-white);
+    color: var(--jet-black);
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%; /* Sedikit diperkecil padding atas-bawahnya agar navbar tidak terlalu tebal */
+    background-color: var(--pure-white);
+    color: var(--pure-white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--sport-red);
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+
+.logo-img {
+    height: 85px;       /* Ukuran optimal agar teks agensi di bawah logo terlihat jelas */
+    width: auto;        /* Mencegah gambar menjadi gepeng */
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.)); /* Efek bayangan tipis agar logo lebih tegas */
+}
+
+
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--pure-white);
+}
+
+.logo-sub {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--sport-red);
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--jet-black);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--sport-red);
+}
+
+.btn-nav {
+    background: linear-gradient(to right, var(--sport-red), var(--dark-red));
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: var(--pure-white) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(13, 13, 13, 0.85), rgba(13, 13, 13, 0.95)), url('assets/hero-bg.jpg') no-repeat center center/cover;
+    background-color: var(--jet-black);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--pure-white);
+    padding: 0 20px;
+}
+
+.tagline {
+    color: var(--sport-red);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--pure-white), var(--light-gray));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-gray);
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: var(--light-gray);
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--sport-red), var(--dark-red));
+    color: var(--pure-white);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+/* About / Story Section */
+.about-section {
+    background-color: var(--light-gray);
+    padding: 80px 8%;
+}
+
+.about-box {
+    background-color: var(--pure-white);
+    padding: 50px;
+    border-left: 8px solid var(--sport-red);
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.badge {
+    background-color: var(--jet-black);
+    color: var(--pure-white);
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-box h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-box p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Activation Section */
+.activation-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: var(--pure-white);
+}
+
+.activation-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--light-gray);
+    padding: 40px 30px;
+    border-radius: 4px;
+    max-width: 350px;
+    text-align: left;
+    position: relative;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+    background: var(--jet-black);
+    color: var(--pure-white);
+}
+
+.card:hover h3 {
+    color: var(--sport-red);
+}
+
+.card-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(0,0,0,0.05);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--jet-black);
+}
+
+/* Products & Tech Section */
+.products-section {
+    background-color: var(--jet-black);
+    color: var(--pure-white);
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.tech-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.tech-item {
+    background-color: rgba(229, 57, 37, 0.1);
+    border: 1px solid var(--sport-red);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--sport-red);
+    border-radius: 20px;
+}
+
+.product-variants {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.variant-box {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 4px;
+    max-width: 450px;
+    text-align: left;
+    flex: 1;
+}
+
+.variant-box h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--pure-white);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--sport-red);
+    padding-bottom: 10px;
+}
+
+.variant-box p {
+    color: var(--sport-red);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.use-case {
+    font-size: 14px;
+    color: var(--light-gray);
+    display: block;
+}
+
+/* Contact & Footer Section */
+.contact-section {
+    background-color: #050505;
+    color: var(--light-gray);
+    padding: 60px 8% 30px 8%;
+    border-top: 5px solid var(--dark-red);
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--pure-white);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    font-style: italic;
+    color: var(--sport-red);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.contact-info strong {
+    color: var(--pure-white);
+    display: inline-block;
+    width: 120px;
+}
+
+.contact-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
