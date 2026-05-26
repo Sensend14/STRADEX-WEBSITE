@@ -3,113 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stradex | SLIPS #GripYourSafety Campaign</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>STRADEX AGENCY | #GripYourSafety</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="Stradex Agency Logo" class="logo-img">
+    <div class="bg-pattern"></div>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="STRADEX Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">The Story</a></li>
-                <li><a href="#activation">Activation</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact" class="btn-nav">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#injuries">Risiko Cedera</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>STRADEX<span>AGENCY</span></h1>
+            <p>Bagi para atlet, cedera bukan hanya soal rasa sakit, tetapi sering kali menjadi penentu karier.</p>
+            <a href="#about" class="btn-main">Pelajari Lebih Lanjut</a>
+        </div>
     </header>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <span class="tagline">STRADEX PRESENTS: SLIPS CAMPAIGN</span>
-            <h1>#GripYourSafety</h1>
-            <h2>Biar Main Nggak Cuma Jago, Tapi Juga Aman</h2>
-            <p>Keamanan itu bukan opsional, tapi standar wajib. Bersama SLIPS, mari bangun kesadaran berkendara penuh stabilitas di futsal, basket, hingga badminton.</p>
-            <a href="#activation" class="btn-primary">Ikuti GOR Visit</a>
+    <section id="about">
+        <h2 class="section-title">The Harsh Reality</h2>
+        <div style="max-width: 800px;">
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">
+                Mulai dari mitos tidak ada darah yang mengalir di ligamen hingga sindrom gegar otak yang tidak kunjung usai, hal-hal ini menjadi perhatian serius kami seputar cedera olahraga.
+            </p>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-box">
-                <span class="badge">Lahir dari Empati</span>
-                <h3>Solusi Nyata, Bukan Sekadar Bisnis</h3>
-                <p>SLIPS adalah brand kaos kaki olahraga lokal Indonesia yang lahir langsung dari pengalaman nyata sang founder yang pernah mengalami cedera ACL akibat penggunaan kaos kaki yang tidak sesuai kebutuhan olahraga.</p>
-                <p>Lewat kampanye #GripYourSafety, kami berkomitmen menghadirkan produk safety support fungsional berkualitas tinggi yang tetap terjangkau untuk semua kalangan, termasuk pelajar dan mahasiswa.</p>
+    <section id="injuries" style="background: #151515;">
+        <h2 class="section-title">Critical Attention</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fa-solid fa-person-falling-burst"></i>
+                <h3>ACL Non-Kontak</h3>
+                <p>Cedera ligamen lutut sering terjadi akibat perubahan arah zig-zag secara tiba-tiba atau berhenti mendadak, bukan hanya benturan keras.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="activation" class="activation-section">
-        <h2>GOR Visit Activation</h2>
-        <p class="section-desc">Mulai Mei ini, SLIPS bakal turun langsung ke berbagai GOR di kota-kota besar. Datang dan rasakan langsung sensasinya!</p>
-        
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-number">01</div>
-                <h3>Product Trial</h3>
-                <p>Nyobain langsung kaos kaki anti-slip SLIPS di lapangan untuk ngerasain grip yang lebih stabil dan meningkatkan rasa percaya diri saat bergerak bebas.</p>
+            <div class="info-card">
+                <i class="fa-solid fa-droplet-slash"></i>
+                <h3>Ligamen Avascular</h3>
+                <p>ACL memiliki suplai darah minim. Jika putus total, ia tidak bisa sembuh sendiri dan memerlukan rekonstruksi artroskopi.</p>
             </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <h3>Direct Purchase</h3>
-                <p>Nggak pakai ribet, kamu bisa langsung beli produk favoritmu secara instan via scan QR code yang tersedia langsung di lokasi GOR.</p>
+            <div class="info-card">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h3>Hamstring Sprint</h3>
+                <p>Cedera paling umum di lapangan hijau karena aktivitas sprint dan melompat eksplosif yang membebani otot belakang paha.</p>
             </div>
-            <div class="card">
-                <div class="card-number">03</div>
-                <h3>Content & Challenge</h3>
-                <p>Ikutan bikin konten seru di content booth kami dan gabung dalam digital challenge #GripCheck di media sosial untuk memenangkan keseruan lainnya.</p>
+            <div class="info-card">
+                <i class="fa-solid fa-shoe-prints"></i>
+                <h3>Overuse Syndrome</h3>
+                <p>Runner's knee atau shin splints terjadi karena tubuh dipaksa melebihi batas atau alas kaki yang tidak sesuai biomekanik kaki.</p>
             </div>
         </div>
     </section>
 
-    <section id="products" class="products-section">
-        <h2>Inovasi Perlindungan SLIPS</h2>
-        <div class="tech-grid">
-            <div class="tech-item">✦ Stabilize Foot Step</div>
-            <div class="tech-item">✦ Prevent Wet Sole</div>
-            <div class="tech-item">✦ Prevent Sole Smells</div>
-            <div class="tech-item">✦ Enhance Performance</div>
-            <div class="tech-item">✦ Extra Cushion</div>
-        </div>
-
-        <div class="product-variants">
-            <div class="variant-box">
-                <h3>Crew Socks</h3>
-                <p>Varian: Anti-Slip / Plain (Hitam & Putih)</p>
-                <span class="use-case">Cocok untuk: Gym, Badminton, Futsal Indoor, dan aktivitas aktif harian.</span>
-            </div>
-            <div class="variant-box">
-                <h3>Knee High Socks</h3>
-                <p>Varian: Anti-Slip / Plain (Hitam & Putih)</p>
-                <span class="use-case">Cocok untuk: Futsal, Basket, Sepak Bola dengan proteksi ekstra pada betis.</span>
-            </div>
+    <section class="cta-section" id="contact">
+        <div class="reveal">
+            <h2>SIAP MELINDUNGI LANGKAHMU?</h2>
+            <p>#GripYourSafety dengan Wear SLIPS</p>
+            <a href="https://instagram.com/wear.slips" target="_blank" class="btn-main" style="background: var(--black); color: white;">Follow @wear.slips</a>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <h3>STRADEX AGENCY</h3>
-                <p class="slogan">"Move bold. Speak loud. Stay real."</p>
-                <p><strong>Alamat:</strong> Jl. Widya Kencana, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
-                <p><strong>Call Center:</strong> 021-887-888</p>
-                <p><strong>Email:</strong> stradex.pr@gmail.com</p>
-                <p><strong>Instagram:</strong> @stradex.agency</p>
-                <p><strong>Website:</strong> www.stradex-agency.co.id</p>
-            </div>
-            <div class="contact-footer">
-                <p>&copy; 2026 Stradex Public Relations Agency. All Rights Reserved.</p>
-            </div>
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-    </section>
+        <p>&copy; 2026 STRADEX AGENCY. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #555;">Focus. Protect. Perform.</p>
+    </footer>
 
+    <script>
+        // Inisialisasi ScrollReveal (Motion agar Smooth)
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '60px',
+            duration: 1000,
+            delay: 200,
+            reset: true
+        });
+
+        sr.reveal('.hero-content h1', { delay: 300, origin: 'left' });
+        sr.reveal('.hero-content p', { delay: 500 });
+        sr.reveal('.btn-main', { delay: 700 });
+        sr.reveal('.section-title', { origin: 'left' });
+        sr.reveal('.info-card', { interval: 200 });
+        sr.reveal('.cta-section .reveal', { scale: 0.85 });
+    </script>
 </body>
 </html>
