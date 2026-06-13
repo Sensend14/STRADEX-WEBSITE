@@ -382,3 +382,105 @@ footer {
     nav { flex-direction: column; gap: 15px; }
     .nav-links { flex-wrap: wrap; justify-content: center; }
 }
+/* =========================================
+   TAMBAHAN BARU: MEDIA KIT & ACTIVITY
+   ========================================= */
+
+/* --- MEDIA KIT --- */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.media-card {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.media-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: var(--sport-red);
+    margin: 15px 0 10px;
+    letter-spacing: 1px;
+}
+
+.media-card p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    color: var(--light-gray);
+    line-height: 1.5;
+}
+
+.btn-glow-small {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, var(--dark-red), var(--sport-red));
+    color: var(--pure-white);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    margin-top: auto; /* Memastikan tombol selalu ada di bawah */
+}
+
+.btn-glow-small:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(229, 57, 53, 0.4);
+    color: #fff;
+}
+
+/* --- GALLERY / ACTIVITY PAGE --- */
+.gallery-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(229, 57, 53, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.02);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0; left: 0; width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.95) 80%);
+    padding: 40px 30px 20px;
+    text-align: left;
+}
+
+.gallery-caption h4 {
+    color: var(--sport-red);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.gallery-caption p {
+    font-size: 1rem;
+    color: var(--light-gray);
+    max-width: 90%;
+}
