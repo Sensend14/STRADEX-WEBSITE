@@ -13,24 +13,22 @@
 </head>
 <body>
 
-    <!-- Animasi Background Grid -->
     <div class="bg-pattern"></div>
 
-    <!-- Navigasi -->
     <nav>
         <div class="logo">
             <img src="assets/logo.png" alt="STRADEX Logo">
         </div>
         <ul class="nav-links">
-            <li><a href="#hero">Beranda</a></li>
-            <li><a href="#agency">Agensi</a></li>
-            <li><a href="#story">Kisah SLIPS</a></li>
-            <li><a href="#features">Inovasi</a></li>
-            <li><a href="#activation">Aktivasi</a></li>
+            <li><a href="index.html#hero">Beranda</a></li>
+            <li><a href="index.html#agency">Agensi</a></li>
+            <li><a href="index.html#features">Inovasi</a></li>
+            <li><a href="index.html#activation">Aktivasi</a></li>
+            <li><a href="index.html#media-kit">Media Kit</a></li>
+            <li><a href="activity.html">Kegiatan</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero" id="hero">
         <div class="hero-content">
             <div class="badge">STRADEX PRESENTS: SLIPS CAMPAIGN</div>
@@ -41,7 +39,6 @@
         </div>
     </header>
 
-    <!-- Stradex Agency Section -->
     <section id="agency" class="dark-section">
         <div class="container">
             <h2 class="section-title">NILAI STRADEX</h2>
@@ -67,7 +64,6 @@
         </div>
     </section>
 
-    <!-- The Story Section -->
     <section id="story" class="light-section">
         <div class="container dual-layout">
             <div class="text-content">
@@ -88,7 +84,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="dark-section">
         <div class="container">
             <h2 class="section-title text-center">INOVASI PERLINDUNGAN</h2>
@@ -110,7 +105,6 @@
                 </div>
             </div>
 
-            <!-- Product Variants -->
             <div class="product-variants">
                 <div class="variant">
                     <h4>CREW SOCKS</h4>
@@ -126,7 +120,6 @@
         </div>
     </section>
 
-    <!-- Activation Section -->
     <section id="activation" class="red-section">
         <div class="container text-center">
             <h2 class="section-title text-white">GOR VISIT ACTIVATION</h2>
@@ -152,7 +145,34 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="media-kit" class="light-section">
+        <div class="container text-center">
+            <h2 class="section-title">MEDIA KIT PR</h2>
+            <p class="section-desc">Unduh materi publikasi resmi dan press release dari kampanye #GripYourSafety</p>
+            
+            <div class="media-grid">
+                <div class="media-card glass-box">
+                    <i class="fa-solid fa-file-pdf huge-icon"></i>
+                    <h3>Factsheet</h3>
+                    <p>Informasi detail mengenai spesifikasi produk dan latar belakang brand SLIPS.</p>
+                    <a href="assets/Factsheet Stradex.pdf" target="_blank" class="btn-glow-small">Unduh Dokumen <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="media-card glass-box">
+                    <i class="fa-solid fa-newspaper huge-icon"></i>
+                    <h3>News Release</h3>
+                    <p>Siaran pers resmi peluncuran kampanye GOR Visit Activation.</p>
+                    <a href="assets/News Release Stradex.pdf" target="_blank" class="btn-glow-small">Unduh Dokumen <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="media-card glass-box">
+                    <i class="fa-solid fa-envelope-open-text huge-icon"></i>
+                    <h3>Newsletter</h3>
+                    <p>Buletin informasi seputar bahaya cedera dan cara penanganannya.</p>
+                    <a href="assets/News Letter Stradex (1).pdf" target="_blank" class="btn-glow-small">Unduh Dokumen <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
@@ -161,7 +181,7 @@
                 <p>Move bold. Speak loud. Stay real.</p>
             </div>
             <div class="footer-contact">
-                <p><i class="fa-solid fa-location-dot"></i> Jl. Widya Kencana, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
+                <p><i class="fa-solid fa-location-dot"></i> Jl. Widya Kencana, Ciater, Kec. Serpong, Kota Tangerang Selatan</p>
                 <p><i class="fa-solid fa-phone"></i> Call Center: 021-887-888</p>
                 <p><i class="fa-solid fa-envelope"></i> stradex.pr@gmail.com</p>
                 <div class="social-links">
@@ -187,6 +207,9 @@
         sr.reveal('.dual-layout .text-content', { origin: 'left' });
         sr.reveal('.dual-layout .image-content', { origin: 'right' });
         sr.reveal('.variant', { interval: 200, origin: 'bottom' });
+        
+        /* Script Tambahan untuk Media Kit Baru */
+        sr.reveal('.media-card', { interval: 200, origin: 'bottom' });
     </script>
 </body>
 </html>
